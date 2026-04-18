@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Panitikang Digital</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: #f4f6f9;
+}
+
+/* HERO */
+.hero {
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+    url('https://images.unsplash.com/photo-1524995997946-a1c2e315a42f');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.hero h1 {
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    max-width: 700px;
+    margin: auto;
+    line-height: 1.6;
+}
+
+/* SECTION */
+section {
+    padding: 60px 20px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+h2 {
+    text-align: center;
+    color: #2c3e50;
+}
+
+/* GRID */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+/* CARDS */
+.card {
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transform: translateY(40px);
+    opacity: 0;
+    transition: all 0.6s ease;
+}
+
+.card.show {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.card:hover {
+    transform: translateY(-5px) scale(1.02);
+}
+
+/* IMAGE */
+.card img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 15px;
+}
+
+.card h3 {
+    margin-top: 0;
+}
+
+/* QR */
+.qr img {
+    width: 150px;
+    display: block;
+    margin: 10px auto;
+}
+
+/* BUTTON */
+.btn {
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+    padding: 8px;
+    background: #3498db;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+}
+
+.btn:hover {
+    background: #2980b9;
+}
+</style>
+
+</head>
+<body>
+
+<!-- HERO / INTRO -->
+<div class="hero">
+    <h1>PANITIKANG DIGITAL</h1>
+    <p>
+        Maligayang pagdating sa Panitikang Digital—kung saan ang bawat salita ay may kwento, at ang bawat kwento ay may buhay.<br><br>
+
+        Sa mundong patuloy na nagbabago, ang panitikan ay hindi na lamang nakasulat sa papel—ito ay humihinga, gumagalaw, at umaabot sa’yo sa digital na paraan. Tuklasin ang makukulay na flyers na naglalaman ng mga ideya, damdamin, at mensaheng handang magbigay inspirasyon, kaalaman, at bagong pananaw.<br><br>
+
+        Handa ka na bang maglakbay sa mundo ng malikhaing panitikan?<br>
+        Simulan mo na—at hayaang ang bawat pahina ay magsalita sa’yo.
+    </p>
+</div>
+
+<!-- CONTENT -->
+<section>
+    <h2>📚 Mga Kaalaman</h2>
+
+    <div class="grid">
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1516979187457-637abb4f9353">
+            <div class="card-content">
+                <h3>📱 Epektibong Pagkatuto</h3>
+                <p>Mas nagiging interesado at mas madaling nauunawaan ng mga estudyante ang aralin.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1584697964190-7383c2a8f95b">
+            <div class="card-content">
+                <h3>🎓 Para sa Guro</h3>
+                <p>Mas napapadali ang paggawa ng lesson at nagiging organisado ang pagtuturo.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1509062522246-3755977927d7">
+            <div class="card-content">
+                <h3>🤝 Partisipasyon</h3>
+                <p>Mas nagiging aktibo at interactive ang mga estudyante sa klase.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1553484771-047a44eee27a">
+            <div class="card-content">
+                <h3>⚠️ Mga Hamon</h3>
+                <p>Internet, gadgets, at technical issues ang pangunahing suliranin.</p>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- QR VIDEOS -->
+<section>
+    <h2>🎥 Mga Bidyo</h2>
+
+    <div class="grid">
+
+        <div class="card qr">
+            <div class="card-content">
+                <h3>Bidyo 1</h3>
+                <img src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=https://www.facebook.com/watch/?v=318208943520569">
+                <a class="btn" href="https://www.facebook.com/watch/?v=318208943520569" target="_blank">Panoorin</a>
+            </div>
+        </div>
+
+        <div class="card qr">
+            <div class="card-content">
+                <h3>Bidyo 2</h3>
+                <img src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=https://www.facebook.com/watch/?v=234670052056512">
+                <a class="btn" href="https://www.facebook.com/watch/?v=234670052056512" target="_blank">Panoorin</a>
+            </div>
+        </div>
+
+        <div class="card qr">
+            <div class="card-content">
+                <h3>Bidyo 3</h3>
+                <img src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=https://www.facebook.com/watch/?v=206370238094827">
+                <a class="btn" href="https://www.facebook.com/watch/?v=206370238094827" target="_blank">Panoorin</a>
+            </div>
+        </div>
+
+        <div class="card qr">
+            <div class="card-content">
+                <h3>Bidyo 4</h3>
+                <img src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=https://www.facebook.com/reel/311119697207235">
+                <a class="btn" href="https://www.facebook.com/reel/311119697207235" target="_blank">Panoorin</a>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<script>
+const cards = document.querySelectorAll('.card');
+
+const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('show');
+        }
+    });
+}, { threshold: 0.2 });
+
+cards.forEach(card => observer.observe(card));
+</script>
+
+</body>
+</html>
